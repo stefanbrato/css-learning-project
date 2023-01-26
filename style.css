@@ -1,0 +1,112 @@
+:root {
+  --oxfordblue: #012e40;
+  --midnightgreen: #024959;
+  --skobeloff: #026773;
+  --keppel: #3ca6a6;
+  --whitechocolate: #f2e3d5;
+  --black: #171321;
+  --white: #f7f8fa;
+  --font-size: 1.3rem;
+  --worksans: "Work Sans", sans-serif;
+  --merryweather: "Merriweather", serif;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  font-family: var(--worksans);
+  background-color: var(--black);
+  color: var(--white);
+  font-size: var(--font-size);
+}
+
+h1,
+h2,
+h3 {
+  margin: 0;
+}
+
+a {
+  color: var(--oxfordblue);
+}
+
+a:hover {
+  color: var(--black);
+  text-decoration: none;
+}
+
+/* intro styles*/
+
+#intro {
+  padding-bottom: 10rem;
+}
+
+#intro p {
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+#intro .name {
+  font-family: var(--merryweather);
+}
+
+.name span {
+  font-family: var(--worksans);
+  font-size: 4rem;
+  color: var(--whitechocolate);
+  display: block;
+}
+
+#intro h2 {
+  font-size: 4rem;
+}
+
+#contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--keppel);
+  padding: 4rem 4rem;
+}
+
+#contact p {
+  width: 25vw;
+  text-align: center;
+  font-family: var(--merryweather);
+}
+
+#contact h2 {
+  font-family: var(--worksans);
+}
+
+nav {
+  font-family: var(--worksans);
+  font-size: 80%;
+  padding: 1rem;
+}
+
+nav h1 a {
+  font-family: var(--merryweather);
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
